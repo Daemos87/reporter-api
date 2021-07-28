@@ -1,0 +1,93 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/agiangrande/Documents/repo/reporter-api/reports",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "chromium",
+        "testDir": "/Users/agiangrande/Documents/repo/reporter-api",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).@(ts|js|mjs)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "./reports/report.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "./reports/report.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "/Users/agiangrande/Documents/repo/reporter-api",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "workers": 6,
+    "_launch": []
+  },
+  "suites": [
+    {
+      "title": "test.test.ts",
+      "file": "test.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Test",
+          "ok": true,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 2,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "A string",
+                      "contentType": "string"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "test.test.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
